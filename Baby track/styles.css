@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: rgb(68, 236, 183);
+    /* background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-blue-genetic-dna-medical-background-windbackground-display-boardbackgroundpsdcolorful-image_77077.jpg); */
+    background-size: cover;
+}
+
+.mainDiv{
+    background-color: rgb(190, 240, 226);
+    padding: 20px;
+    padding-bottom: 0;
+    border: 2px solid black;
+    width: 520px;
+    position: relative;
+
+    margin-top: 5%;
+    margin-left: 27.5%;
+}
+
+.smallDiv{
+    background-color: rgb(73, 28, 28);
+    height: 80px;
+    width: 514px;
+    border-radius: 2%;
+    position: relative;
+    border: 2px solid black;
+
+    margin-bottom: 10px;
+}
+
+.logoImg{
+    width: 100x;
+    height: 80px;
+    position: absolute;
+    left: 0; top: 0;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+.c1{
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    height: 80px;
+    width:200px;
+    position: absolute;
+    left:100px;
+    top: 0;
+
+    padding: 0 5px;
+}
+
+.c2{
+    background-color: white;
+    display: inline-block;
+    height: 80px;
+    width:192px;
+    position: absolute;
+    left: 312px;
+    top: 0;
+
+    padding: 0 5px;
+}
+
+h1, b{
+    color: rgb(55, 55, 55);
+    font-size: 25px;
+}
+
+h2, p{
+    color: rgb(113, 110, 110);
+    font-size: 20px; 
+}
+
+#topPara{
+    margin:10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(1, 1, 54);
+}
+
+#topHeading{
+    position: absolute;
+    bottom: 100%;
+    font-size: 40px;
+    left:17%;
+    color: rgb(1, 1, 54);
+}
+
+.img1{
+    position: absolute;
+    bottom: 101%;
+    height: 40px;
+    left: 10%;
+}
