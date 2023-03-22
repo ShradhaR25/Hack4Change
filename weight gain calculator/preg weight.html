@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title></title>
+
+        <link rel="stylesheet" type="text/css" href="preg weight.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+    <body bgcolor="#90EE90">
+       
+        <div class="container">
+            
+            <div class="card">
+    
+                <div class="card-header text-center "> Pregnancy BMI Calculator</div>
+                <div class="card-body">
+                    <form class="w-50 m-auto" >
+                        <div class="form-group">
+                            <td>Pregnant with Twins</td>
+                            <label for="twins1" class="cbcontainer"><input name="twins" id="twins1" value="0" type="radio" checked><span class="rbmark"></span>No </label>&nbsp;
+		                    <label for="twins2" class="cbcontainer"><input name="twins" id="twins2" value="1" type="radio" ><span class="rbmark"></span>Yes</label>
+                        </div>
+                        
+
+	<td >Your Current Pregnancy Stage</td>
+	<td >
+		<select name="pstage" class="infull">
+			<option value="1">Week 1</option><option value="2">Week 2</option><option value="3">Week 3</option><option value="4">Week 4</option><option value="5">Week 5</option><option value="6">Week 6</option><option value="7">Week 7</option><option value="8">Week 8</option><option value="9">Week 9</option><option value="10">Week 10</option><option value="11">Week 11</option><option value="12">Week 12</option><option value="13">Week 13</option><option value="14">Week 14</option><option value="15">Week 15</option><option value="16">Week 16</option><option value="17">Week 17</option><option value="18">Week 18</option><option value="19">Week 19</option><option value="20" selected>Week 20</option><option value="21">Week 21</option><option value="22">Week 22</option><option value="23">Week 23</option><option value="24">Week 24</option><option value="25">Week 25</option><option value="26">Week 26</option><option value="27">Week 27</option><option value="28">Week 28</option><option value="29">Week 29</option><option value="30">Week 30</option><option value="31">Week 31</option><option value="32">Week 32</option><option value="33">Week 33</option><option value="34">Week 34</option><option value="35">Week 35</option><option value="36">Week 36</option><option value="37">Week 37</option><option value="38">Week 38</option><option value="39">Week 39</option><option value="40">Week 40</option>		</select>
+	</td>
+</tr>
+
+                            
+
+                        <div class="form-group">
+                            <label>Height :</label>
+                            <input type="number" name="" placeholder="Height in cm" required id="Height" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Weight before Pregnancy :</label>
+                            <input type="number" name=""placeholder=" Weight in Kg" required id="weightBefore" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Weight now :</label>
+                            <input type="number" name=""placeholder="Weight in Kg" required id="weightNow" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>BMI value before Pregnancy : </label>
+                            <input type="number" name="" id="bmibefore" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>BMI value now : </label>
+                            <input type="number" name="" id="bminow" class="form-control">
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-success" onclick="getvalue()">Submit</button>
+                            <button type="clear" class="btn btn-new" onclick="clearAllLabel()">Clear</button>
+                        </div>
+                       
+                       
+                        
+                        
+                    </form>
+                </div>
+                <div class="card-footer text-center">A schedule for healthy weight gain based on guidelines from the Institute of Medicine.</div>
+
+            </div>
+
+        </div>
+        
+<script>
+    function getvalue(){
+        var weightBefore= document.getElementById('weightBefore').value;
+        var weightNow= document.getElementById('weightNow').value;
+        var height= document.getElementById('height').value;
+         height=height/100;
+
+        var newbmibefore= weightBefore/(height*height);
+        var newbmiafter= weightNow/(height*height);
+
+        document.getElementById('bmibefore').value =newbmibefore;
+        document.getElementById('bminow').value =newbmiafter;
+
+
+    }
+    
+    
+    
+</script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    </body>
+</html>-

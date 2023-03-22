@@ -1,0 +1,217 @@
+
+/* CSS files add styling rules to your content */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+#main 
+{
+    background: transparent;
+    width: 100%;
+    height: 50px;
+}
+#main nav ul {
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+#main nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 50px;
+}
+#main nav ul li a {
+    text-decoration: none;
+    color: #ACF392;
+    font-size: 30px;
+    padding: 10px 10px;
+    transition: 0.4s all ease-out;
+}
+#main nav ul li a.active,
+#main nav ul li a:hover{
+    background: #ECEF93;
+    color: #15AC38;
+    transition: 0.4s all ease-out;
+}
+#main .logo{
+    float: right;
+}
+.logo{
+    background: url(background3.jpg);
+    width: 930px;
+    height: 930px;
+    background-position: centre;
+    background-size: cover;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    
+    color:#ACF392;
+
+    background:linear-gradient(rgba(168, 255, 165, 0.812),rgba(248, 248, 248, 0.85)),url('bg_of_pregcalc.jpg') no-repeat center center/cover;
+
+}
+
+.card-header{
+    border: 5px outset rgb(229, 234, 230);
+  background-color: rgb(147, 221, 160);
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: large;
+  text-align: center;
+}
+.card-footer{
+    border: 5px outset rgb(229, 234, 230);
+    background-color: rgb(147, 221, 160);
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: large;
+    text-align: center;
+
+}
+
+
+
+h1 {
+    font-style: italic;
+    color:#ACF392;
+    font-size: 100px;
+    padding: 20px 50px 75px;
+
+}
+
+
+
+
+video {
+    display: block;
+}
+
+section {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+}
+
+.removed {
+    display: none;
+}
+
+.invisible {
+    opacity: 0.2;
+}
+
+.camView {
+    position: relative;
+    float: left;
+    width: calc(100% - 20px);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.camView p {
+    position: absolute;
+    padding: 5px;
+    background-color: rgba(255, 111, 0, 0.85);
+    color: #FFF;
+    border: 1px dashed rgba(255, 255, 255, 0.7);
+    z-index: 2;
+    font-size: 12px;
+}
+
+.highlighter {
+    background: rgba(0, 255, 0, 0.25);
+    border: 1px dashed #fff;
+    z-index: 1;
+    position: absolute;
+}
+
+.center{
+    text-align:center;
+}
+.instructions{
+    display: flex;
+    font-size: 18px;
+    width: 50%;
+    color: black;
+}
+
+.TopContainer{
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+}
+
+.btnOuter{
+    margin:30px 0;
+    display:flex;
+    justify-content: center;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #EAF507;
+    background: #F58908;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #F58908
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #F58908;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
