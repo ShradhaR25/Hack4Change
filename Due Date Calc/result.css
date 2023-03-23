@@ -1,0 +1,48 @@
+.box{
+    background-color: rgb(196 218 188);
+    background-image: url(images/pregWom.png);
+    background-size: cover;
+    width: 750px;
+    height:300px;
+    margin: 20px auto 0;
+    border: 2px solid black;
+    padding: 100px 25px;
+
+    box-shadow: 2px 2px 2px rgb(2, 66, 46), 0 0 25px rgb(48, 69, 56), 0 0 5px rgb(41, 98, 80);
+    position: relative;
+
+}
+body{
+    color: white;
+    text-shadow: 2px 1px #979797;
+    background-color: #4CAF50;
+    background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-nature-background_23-2148934719.jpg);
+    background-blend-mode: luminosity;
+}
+h1{
+    margin-top:0;
+}
+.topImg{
+    position: absolute;
+    height: auto;
+    width: 10%;
+
+    top: -20px;
+    left:45%;
+}
+.h2result
+{
+    background: #7ba758;
+    color: #fff;
+    border: 1px solid #518428;
+    padding: 5px;
+    margin-top: 3px;
+    font-size: 22px;
+    font-weight: normal;
+}
+p{
+   color: black;
+   text-shadow: none;
+   line-height: 200%;
+   font-weight:bold;
+}
